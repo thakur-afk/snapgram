@@ -1,6 +1,5 @@
 import { bottombarLinks } from "@/src/constants";
 import { NavLink, useLocation } from "react-router-dom";
-import React from "react";
 
 const Bottombar = () => {
   const { pathname } = useLocation();
@@ -22,7 +21,7 @@ const Bottombar = () => {
                   isActive && "invert-white"
                 }`}
               />
-              {link.label}
+              <p className=" max-[500px]:hidden">{link.label}</p>
             </NavLink>
           </li>
         );
